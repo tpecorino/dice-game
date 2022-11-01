@@ -12,6 +12,5 @@ class Die(GamePiece):
         super().__init__()
         self.sides = sides
 
-    @staticmethod
-    def roll() -> int:
-        return randint(1, 6)
+    def roll(self) -> int:
+        return randint(1, self.sides)
