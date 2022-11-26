@@ -20,3 +20,6 @@ class Scoreboard:
         self.large_straight_score = 0
         self.five_of_kind_score = 0
         self.total_score = 0
+
+    def __setitem__(self, score, value):
+        self.__dict__[score] = value

@@ -46,12 +46,12 @@ class RollChecker:
 
         if len(set(roll)) == 4 and list(sorted(set(roll))) == list(range(min(roll), max(roll) + 1)):
             self.small_straight = True
-            scoreboard.three_of_kind_score = 30
+            scoreboard.small_straight_score = 30
 
         if sorted(roll) == list(range(min(roll), max(roll) + 1)):
             self.small_straight = True
             self.large_straight = True
-            scoreboard.three_of_kind_score = 30
-            scoreboard.four_of_kind_score = 40
+            scoreboard.small_straight_score = 30
+            scoreboard.large_straight_score = 40
 
         return self.__dict__
